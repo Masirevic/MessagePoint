@@ -13,9 +13,12 @@
 		88E48BC01FF45665003DF661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88E48BBE1FF45665003DF661 /* Main.storyboard */; };
 		88E48BC21FF45665003DF661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E48BC11FF45665003DF661 /* Assets.xcassets */; };
 		88E48BC51FF45665003DF661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88E48BC31FF45665003DF661 /* LaunchScreen.storyboard */; };
+		88E48BD21FF45DF8003DF661 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88E48BD11FF45DF7003DF661 /* GoogleService-Info.plist */; };
+		B0DFE4ED7C6686B9E299AF7C /* Pods_MessagePoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE75DFE4E8617D7E7DEE12C /* Pods_MessagePoint.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5ACE85F8A737FD70406A5DE9 /* Pods-MessagePoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagePoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessagePoint/Pods-MessagePoint.release.xcconfig"; sourceTree = "<group>"; };
 		88E48BB51FF45665003DF661 /* MessagePoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessagePoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E48BB81FF45665003DF661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88E48BBA1FF45665003DF661 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		88E48BC11FF45665003DF661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88E48BC41FF45665003DF661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88E48BC61FF45665003DF661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E48BD11FF45DF7003DF661 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AAE75DFE4E8617D7E7DEE12C /* Pods_MessagePoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessagePoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE9B5E156288E1E675C0E60B /* Pods-MessagePoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagePoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MessagePoint/Pods-MessagePoint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0DFE4ED7C6686B9E299AF7C /* Pods_MessagePoint.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5526BEC5AB3F8152E8E1199A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE9B5E156288E1E675C0E60B /* Pods-MessagePoint.debug.xcconfig */,
+				5ACE85F8A737FD70406A5DE9 /* Pods-MessagePoint.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		88E48BAC1FF45665003DF661 = {
 			isa = PBXGroup;
 			children = (
 				88E48BB71FF45665003DF661 /* MessagePoint */,
 				88E48BB61FF45665003DF661 /* Products */,
+				5526BEC5AB3F8152E8E1199A /* Pods */,
+				8BF614411C4D8138A9EE73C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +85,7 @@
 				88E48BC11FF45665003DF661 /* Assets.xcassets */,
 				88E48BC31FF45665003DF661 /* LaunchScreen.storyboard */,
 				88E48BC61FF45665003DF661 /* Info.plist */,
+				88E48BD11FF45DF7003DF661 /* GoogleService-Info.plist */,
 			);
 			path = MessagePoint;
 			sourceTree = "<group>";
@@ -99,6 +118,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		8BF614411C4D8138A9EE73C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAE75DFE4E8617D7E7DEE12C /* Pods_MessagePoint.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88E48BC91FF45665003DF661 /* Build configuration list for PBXNativeTarget "MessagePoint" */;
 			buildPhases = (
+				41715405266FCDAD8F430C17 /* [CP] Check Pods Manifest.lock */,
 				88E48BB11FF45665003DF661 /* Sources */,
 				88E48BB21FF45665003DF661 /* Frameworks */,
 				88E48BB31FF45665003DF661 /* Resources */,
+				FD8E1C248E9FCD179A03E2AB /* [CP] Embed Pods Frameworks */,
+				84035E4D0925964576C1B4FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,12 +189,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				88E48BC51FF45665003DF661 /* LaunchScreen.storyboard in Resources */,
+				88E48BD21FF45DF8003DF661 /* GoogleService-Info.plist in Resources */,
 				88E48BC21FF45665003DF661 /* Assets.xcassets in Resources */,
 				88E48BC01FF45665003DF661 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41715405266FCDAD8F430C17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84035E4D0925964576C1B4FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MessagePoint/Pods-MessagePoint-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD8E1C248E9FCD179A03E2AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MessagePoint/Pods-MessagePoint-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		88E48BB11FF45665003DF661 /* Sources */ = {
@@ -308,6 +387,7 @@
 		};
 		88E48BCA1FF45665003DF661 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE9B5E156288E1E675C0E60B /* Pods-MessagePoint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,6 +403,7 @@
 		};
 		88E48BCB1FF45665003DF661 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ACE85F8A737FD70406A5DE9 /* Pods-MessagePoint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
