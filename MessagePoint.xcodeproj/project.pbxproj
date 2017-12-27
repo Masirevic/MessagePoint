@@ -14,6 +14,7 @@
 		88E48BC21FF45665003DF661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E48BC11FF45665003DF661 /* Assets.xcassets */; };
 		88E48BC51FF45665003DF661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88E48BC31FF45665003DF661 /* LaunchScreen.storyboard */; };
 		88E48BD21FF45DF8003DF661 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88E48BD11FF45DF7003DF661 /* GoogleService-Info.plist */; };
+		88E48BD41FF46341003DF661 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E48BD31FF46341003DF661 /* DataService.swift */; };
 		B0DFE4ED7C6686B9E299AF7C /* Pods_MessagePoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE75DFE4E8617D7E7DEE12C /* Pods_MessagePoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		88E48BC41FF45665003DF661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88E48BC61FF45665003DF661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88E48BD11FF45DF7003DF661 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		88E48BD31FF46341003DF661 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		AAE75DFE4E8617D7E7DEE12C /* Pods_MessagePoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessagePoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE9B5E156288E1E675C0E60B /* Pods-MessagePoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagePoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MessagePoint/Pods-MessagePoint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 		88E48BD01FF457C8003DF661 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				88E48BD31FF46341003DF661 /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				88E48BBD1FF45665003DF661 /* SecondViewController.swift in Sources */,
 				88E48BB91FF45665003DF661 /* AppDelegate.swift in Sources */,
 				88E48BBB1FF45665003DF661 /* FirstViewController.swift in Sources */,
+				88E48BD41FF46341003DF661 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
