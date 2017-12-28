@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		88E48BB91FF45665003DF661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E48BB81FF45665003DF661 /* AppDelegate.swift */; };
-		88E48BBB1FF45665003DF661 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E48BBA1FF45665003DF661 /* FirstViewController.swift */; };
-		88E48BBD1FF45665003DF661 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E48BBC1FF45665003DF661 /* SecondViewController.swift */; };
+		88E48BBB1FF45665003DF661 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E48BBA1FF45665003DF661 /* FeedVC.swift */; };
+		88E48BBD1FF45665003DF661 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E48BBC1FF45665003DF661 /* GroupsVC.swift */; };
 		88E48BC01FF45665003DF661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88E48BBE1FF45665003DF661 /* Main.storyboard */; };
 		88E48BC21FF45665003DF661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E48BC11FF45665003DF661 /* Assets.xcassets */; };
 		88E48BC51FF45665003DF661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88E48BC31FF45665003DF661 /* LaunchScreen.storyboard */; };
@@ -27,8 +27,8 @@
 		5ACE85F8A737FD70406A5DE9 /* Pods-MessagePoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagePoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessagePoint/Pods-MessagePoint.release.xcconfig"; sourceTree = "<group>"; };
 		88E48BB51FF45665003DF661 /* MessagePoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessagePoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E48BB81FF45665003DF661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88E48BBA1FF45665003DF661 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		88E48BBC1FF45665003DF661 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		88E48BBA1FF45665003DF661 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		88E48BBC1FF45665003DF661 /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
 		88E48BBF1FF45665003DF661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88E48BC11FF45665003DF661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88E48BC41FF45665003DF661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,8 +104,8 @@
 		88E48BCC1FF4572C003DF661 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				88E48BBC1FF45665003DF661 /* SecondViewController.swift */,
-				88E48BBA1FF45665003DF661 /* FirstViewController.swift */,
+				88E48BBC1FF45665003DF661 /* GroupsVC.swift */,
+				88E48BBA1FF45665003DF661 /* FeedVC.swift */,
 				88E48BD51FF50C85003DF661 /* AuthVC.swift */,
 				88E48BD71FF50D23003DF661 /* LoginVC.swift */,
 			);
@@ -277,12 +277,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				88E48BD61FF50C85003DF661 /* AuthVC.swift in Sources */,
-				88E48BBD1FF45665003DF661 /* SecondViewController.swift in Sources */,
+				88E48BBD1FF45665003DF661 /* GroupsVC.swift in Sources */,
 				88E48BD81FF50D23003DF661 /* LoginVC.swift in Sources */,
 				88E48BDF1FF51655003DF661 /* AuthService.swift in Sources */,
 				88E48BB91FF45665003DF661 /* AppDelegate.swift in Sources */,
 				88E48BDD1FF5130F003DF661 /* ShadowView.swift in Sources */,
-				88E48BBB1FF45665003DF661 /* FirstViewController.swift in Sources */,
+				88E48BBB1FF45665003DF661 /* FeedVC.swift in Sources */,
 				88E48BDB1FF50DD7003DF661 /* InsetTextField.swift in Sources */,
 				88E48BD41FF46341003DF661 /* DataService.swift in Sources */,
 			);
