@@ -19,6 +19,7 @@
 		88E48BD81FF50D23003DF661 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E48BD71FF50D23003DF661 /* LoginVC.swift */; };
 		88E48BDB1FF50DD7003DF661 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E48BDA1FF50DD7003DF661 /* InsetTextField.swift */; };
 		88E48BDD1FF5130F003DF661 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E48BDC1FF5130F003DF661 /* ShadowView.swift */; };
+		88E48BDF1FF51655003DF661 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E48BDE1FF51655003DF661 /* AuthService.swift */; };
 		B0DFE4ED7C6686B9E299AF7C /* Pods_MessagePoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE75DFE4E8617D7E7DEE12C /* Pods_MessagePoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		88E48BD71FF50D23003DF661 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		88E48BDA1FF50DD7003DF661 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		88E48BDC1FF5130F003DF661 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		88E48BDE1FF51655003DF661 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		AAE75DFE4E8617D7E7DEE12C /* Pods_MessagePoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessagePoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE9B5E156288E1E675C0E60B /* Pods-MessagePoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagePoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MessagePoint/Pods-MessagePoint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				88E48BD31FF46341003DF661 /* DataService.swift */,
+				88E48BDE1FF51655003DF661 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				88E48BD61FF50C85003DF661 /* AuthVC.swift in Sources */,
 				88E48BBD1FF45665003DF661 /* SecondViewController.swift in Sources */,
 				88E48BD81FF50D23003DF661 /* LoginVC.swift in Sources */,
+				88E48BDF1FF51655003DF661 /* AuthService.swift in Sources */,
 				88E48BB91FF45665003DF661 /* AppDelegate.swift in Sources */,
 				88E48BDD1FF5130F003DF661 /* ShadowView.swift in Sources */,
 				88E48BBB1FF45665003DF661 /* FirstViewController.swift in Sources */,
