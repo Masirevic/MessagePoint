@@ -11,9 +11,11 @@ import UIKit
 
 extension UIView {
     
+    
     func bindToKeboard () {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboarfWillChange(_:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
     }
+    
     
     @objc func keyboarfWillChange (_ notification: NSNotification) {
         
@@ -27,12 +29,6 @@ extension UIView {
             self.frame.origin.y += deltaY
         }, completion: nil)
     }
-    
-    
-    
-    
-    
-    
     
     
 }
