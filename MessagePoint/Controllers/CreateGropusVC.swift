@@ -18,16 +18,32 @@ class CreateGropusVC: UIViewController {
     @IBOutlet weak var doneBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
+    
+    var emailArray = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
+        emailSearchTextField.delegate = self
+        emailSearchTextField.addTarget(self, action: #selector(textFieldDidChanged), for: .editingChanged)
 
         
     }
 
-   
+    @objc func textFieldDidChanged () {
+        if emailSearchTextField.text == "" {
+            emailArray = []
+            tableView.reloadData()
+        } else {
+            DataService.instance.getEmail(forSearchQuery: emailSearchTextField.text!, handler: { (returnedemailArray) in
+                self.emailArray = returnedemailArray
+                self.tableView.reloadData()
+            })
+        }
+        
+    }
     
     @IBAction func doneBtnWasPressed(_ sender: Any) {
         
@@ -36,7 +52,7 @@ class CreateGropusVC: UIViewController {
     
     
     @IBAction func closeBtnWasPressed(_ sender: Any) {
-        
+        dismiss(animated: true, completion: nil)
     }
     
 
@@ -51,15 +67,26 @@ extension CreateGropusVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return emailArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath) as? UserCell else { return UITableViewCell () }
         let profileImage = UIImage(named: "defaultProfileImage")
-        cell.configureCell(profileImage: profileImage!, email: "ljuba@ljuba.com", isSelected: true)
+        cell.configureCell(profileImage: profileImage!, email: emailArray[indexPath.row], isSelected: true)
         return cell
     }
     
 }
+
+
+
+extension CreateGropusVC: UITextFieldDelegate {
+    
+    
+    
+}
+
+
+
 
