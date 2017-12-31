@@ -16,6 +16,7 @@
 		8830FFA41FF7C13300DBD506 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8830FFA31FF7C13300DBD506 /* UserCell.swift */; };
 		88348E371FF8E1B600ED6FFF /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88348E361FF8E1B600ED6FFF /* GroupFeedCell.swift */; };
 		88348E391FF8E2C300ED6FFF /* GroupFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88348E381FF8E2C300ED6FFF /* GroupFeedVC.swift */; };
+		88348E3B1FF912F200ED6FFF /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88348E3A1FF912F200ED6FFF /* UIViewControllerExt.swift */; };
 		88478A5D1FF837BC00C58E90 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88478A5C1FF837BC00C58E90 /* GroupCell.swift */; };
 		88478A5F1FF844E000C58E90 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88478A5E1FF844E000C58E90 /* Group.swift */; };
 		88E48BB91FF45665003DF661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E48BB81FF45665003DF661 /* AppDelegate.swift */; };
@@ -45,6 +46,7 @@
 		8830FFA31FF7C13300DBD506 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		88348E361FF8E1B600ED6FFF /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
 		88348E381FF8E2C300ED6FFF /* GroupFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedVC.swift; sourceTree = "<group>"; };
+		88348E3A1FF912F200ED6FFF /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		88478A5C1FF837BC00C58E90 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		88478A5E1FF844E000C58E90 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		88E48BB51FF45665003DF661 /* MessagePoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessagePoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +152,7 @@
 		88E48BCF1FF45786003DF661 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				88348E3A1FF912F200ED6FFF /* UIViewControllerExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				8821FC4F1FF5A7A600CDCA9D /* MeVC.swift in Sources */,
 				88478A5D1FF837BC00C58E90 /* GroupCell.swift in Sources */,
 				88E48BD61FF50C85003DF661 /* AuthVC.swift in Sources */,
+				88348E3B1FF912F200ED6FFF /* UIViewControllerExt.swift in Sources */,
 				88E48BBD1FF45665003DF661 /* GroupsVC.swift in Sources */,
 				88348E391FF8E2C300ED6FFF /* GroupFeedVC.swift in Sources */,
 				88348E371FF8E1B600ED6FFF /* GroupFeedCell.swift in Sources */,
