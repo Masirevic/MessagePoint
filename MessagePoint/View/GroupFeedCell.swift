@@ -11,8 +11,8 @@ import UIKit
 class GroupFeedCell: UITableViewCell {
 
     @IBOutlet weak var profileImage: UIImageView!
-    @IBOutlet weak var emailLbl: UILabel!
     @IBOutlet weak var contentLbl: UILabel!
+    @IBOutlet weak var emailLbl: UILabel!
     
     func configureCell (profileImage: UIImage, email: String, content: String){
         self.profileImage.image = profileImage

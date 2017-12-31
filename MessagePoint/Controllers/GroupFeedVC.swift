@@ -15,6 +15,9 @@ class GroupFeedVC: UIViewController {
     @IBOutlet weak var groupTitleLbl: UILabel!
     @IBOutlet weak var memberLbl: UILabel!
     @IBOutlet weak var sendBtnView: UIView!
+    
+    
+    
     @IBOutlet weak var messageTextField: InsetTextField!
     @IBOutlet weak var sendBtn: UIButton!
     
@@ -24,13 +27,13 @@ class GroupFeedVC: UIViewController {
     func initData(forGroups group: Group) {
         self.group = group
     }
-        
+    
         
     override func viewDidLoad() {
         super.viewDidLoad()
        tableView.dataSource = self
         tableView.delegate = self
-       sendBtnView.bindToKeboard()
+        sendBtnView.bindToKeboard()
         
     }
     
@@ -39,6 +42,7 @@ class GroupFeedVC: UIViewController {
         groupTitleLbl.text = group?.groupTitle
         DataService.instance.getEmails(group: group!) { (returnedEmails) in
             self.memberLbl.text = returnedEmails.joined(separator: ", ")
+          
         }
         
 
